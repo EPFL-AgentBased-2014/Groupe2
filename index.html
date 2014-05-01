@@ -1,9 +1,9 @@
-<!doctype html>
+!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Marre des bouchons dans le hall de la gare ? by EPFL-AgentBased-2014</title>
+    <title>Groupe2 by EPFL-AgentBased-2014</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Marre des bouchons dans le hall de la gare ?</h1>
-        <p>Étude de flux de déplacements de personnes dans un espace fermé</p>
+        <h1><strong></strong>Groupe2</strong></h1>
 
         <p class="view"><a href="https://github.com/EPFL-AgentBased-2014/Groupe2">View the Project on GitHub <small>EPFL-AgentBased-2014/Groupe2</small></a></p>
 
@@ -29,42 +28,100 @@
       </header>
       <section>
         <h1>
-<a name="%C3%89tude-de-flux-de-d%C3%A9placements-de-personnes-dans-un-espace-ferm%C3%A9" class="anchor" href="#%C3%89tude-de-flux-de-d%C3%A9placements-de-personnes-dans-un-espace-ferm%C3%A9"><span class="octicon octicon-link"></span></a>Étude de flux de déplacements de personnes dans un espace fermé</h1>
-
-<h2>
-<a name="introduction--int%C3%A9r%C3%AAt-de-la-recherche" class="anchor" href="#introduction--int%C3%A9r%C3%AAt-de-la-recherche"><span class="octicon octicon-link"></span></a><strong>Introduction / intérêt de la recherche</strong>
-</h2>
-
-<h3>
-<a name="do%C3%B9-nous-est-venu-lid%C3%A9e" class="anchor" href="#do%C3%B9-nous-est-venu-lid%C3%A9e"><span class="octicon octicon-link"></span></a>D'où nous est venu l'idée?</h3>
-
-<h2>
-<a name="objectifs-et-hypoth%C3%A8ses" class="anchor" href="#objectifs-et-hypoth%C3%A8ses"><span class="octicon octicon-link"></span></a><strong>Objectifs et hypothèses</strong>
-</h2>
-
-<p>Notre objectif avec ce projet est...</p>
-
-<h2>
-<a name="m%C3%A9thodes-et-proc%C3%A9dures" class="anchor" href="#m%C3%A9thodes-et-proc%C3%A9dures"><span class="octicon octicon-link"></span></a><strong>Méthodes et procédures</strong>
-</h2>
-
-<h3>
-<a name="d%C3%A9veloppement-du-programme" class="anchor" href="#d%C3%A9veloppement-du-programme"><span class="octicon octicon-link"></span></a>Développement du programme</h3>
-
-<p>Voici les différentes étapes:
--Mise en place d'un modèle simple composé d'un couloir avec 2 entrées/sorties faits grâce a des patches ainsi que la possibilité de placer des obstacles aléatoires.<img src="http://www.hostingpics.net/viewer.php?id=946267modele1.jpg" alt="">
--Ajout des turtles représentants des humains qui vont parcourir le couloir d'un coté a l'autre. Ils meurent des qu'ils arrivent de l'autre coté.
--Implémentation d'un mécanisme de détection pour que chaque agent s’arrête s'il a un obstacle ou un autre agent en face de lui. 
--Changement de direction des turtles lorsqu'ils rencontrent un obstacle pour éviter celui-ci et puis de nouveau un changement de la direction vers la sortie.
--Mémoire du sol par-rapport au nombres de personnes étant passé sur ce patch. Diriger l  </p>
-
-<h2>
-<a name="r%C3%A9sultats" class="anchor" href="#r%C3%A9sultats"><span class="octicon octicon-link"></span></a><strong>Résultats</strong>
-</h2>
-
-<h2>
-<a name="discussion-et-conclusion" class="anchor" href="#discussion-et-conclusion"><span class="octicon octicon-link"></span></a><strong>Discussion et conclusion</strong>
-</h2>
+		<a name="%C3%89tude-de-flux-de-d%C3%A9placements-de-personnes-dans-un-espace-ferm%C3%A9" class="anchor" 
+		href="#%C3%89tude-de-flux-de-d%C3%A9placements-de-personnes-dans-un-espace-ferm%C3%A9"><span class="octicon octicon-link"></span></a>
+		<span style="text-decoration: underline; text-align: center;">Étude de flux de déplacements de personnes dans un espace fermé</span></h1>
+		
+		<h2>
+		<a name="introduction--int%C3%A9r%C3%AAt-de-la-recherche" class="anchor" href="#introduction--int%C3%A9r%C3%AAt-de-la-recherche"></span></a>
+		<span style="text-align: center;">Introduction et intérêt de la recherche</span></h2>
+		
+			<p>N'avez-vous jamais traversé un espace public ou une station de transports publics à l'heure de pointe alors que vous aviez au plus deux minutes pour prendre votre prochaine correspondance ? 
+			Si cela vous arrive fréquemment, jetez-donc un coup d'oeil à notre étude !<br />
+			Notre travail de simulation de situations à l'aide de la modélisation basée-agents a en effet pour sujet l'étude des flux de déplacements de personnes dans un espace fermé.<br />
+			Qu'il s'agisse d'une gare, d'une boite de nuit ou encore d'un couloir d'université, nous sommes menés à nous déplacer souvent dans un espace limité traversé par d'autres individus tels que nous. <br />
+			La traversée est-elle toujours satisfaisante ? Sommes nous totalement libre de nos mouvements ou sublissons-nous par instant la foule qui nous entoure et nous entraîne ? 
+			Risquons-nous de rentrer en collision avec un autre kidam qui se précipite dans le sens inverse ? Quelle est notre liberté de déplacement dans de telles situations ? Notre volonté de mouvement est-elle limitée par le flux humain ?<br />
+			C'est à ces questions à l'échelle de l'individu participant à "l'expérience" que nous voulons répondre.</p>
+			<p>De plus, quels enseignements pouvons-nous tirer à une échelle d'ensemble ? Y décèle-t-on une configuration spaciale s'installant dans le temps afin d'optimiser le déplacement des individus ?
+			Le chaos généralisé est-il inéluctable et mène-t-il à la congestion totale de l'espace ? La capacité d'action des individus peut-elle influencer le mouvement instauré ? En situation d'urgence, les flux sont-ils capables de réagir de manière appropriée ? Une instance suprême doit-elle impérativement agir sur leur comportement ?</p>
+			<p>Nous allons tenter de clarifier la situation par l'indermédiaire de simulations informatiques dites "basées-agents". C'est cela que nous allons exposer principalement dans les lignes suivantes.<br />
+			Nous allons présenter le modèle élaboré, ses divers paramètres, son mode de fonctionnement, les résultats que nous en tirons et ce que nous en déduisons vis-à-vis des interrogrations initiales.<br />
+			Effectivement, le dernier point abordera le rapport avec le mode physique: y a-t-il une corélation avec la pratique observée ? Quelles mesures adopter en connaissance de cause ?</p>
+			<br />	
+		
+		<h3>
+		<a name="do%C3%B9-nous-est-venu-lid%C3%A9e" class="anchor" href="#do%C3%B9-nous-est-venu-lid%C3%A9e"><span class="octicon octicon-link"></span></a>
+		Résumé</h3>
+		
+			<p>
+				<ul><li>Nous étudions la rencontre et l'interaction de deux flux de sens opposé dans un espace délimité</li>
+				<li>Divers paramètres influencent l'espace et le déplacement: les dimensions de l'espace, les obstacles dans l'espace, la capacité des individus à trouver la sortie et leur capacité d'esquive des obstacles et individus venant en face</li>
+				<li>Nous étudions dans le temps et selon les diverses configurations spaciales et comportementales les aspects que prennent les flux de déplacements</li>
+				<li>Nous cherchons un optimum pour chaque configuration</li>
+				<li>Nous comparons et cherchons des analogies avec les résultats observés dans la réalité</li>
+				</ul>
+			</p>
+		
+		<h2>
+		<a name="objectifs-et-hypoth%C3%A8ses" class="anchor" href="#objectifs-et-hypoth%C3%A8ses"><span class="octicon octicon-link"></span></a>
+		<span style="text-align: center;">Objectifs et hypothèses</span></h2>
+		
+			<p>Nos objectifs avec ce projet sont:
+				<ul><li>déterminer l'aspect des flux de déplacement selon des configurations spaciales et de comportement des individus données</li>
+				<li>déterminer si les configurations adoptées sont satisfaisantes et si elles peuvent être améliorées</li>
+				</ul>
+			</p>
+			<p>Nos hypothèses en rapport à ce projet sont:
+				<ul><li>Plus un espace est occupé par des individus appartement à des flux de courant contraire, moins le déplacement et la traversées de l'espaces sont aisés</li>
+				<li>Plus les individus adoptent un comportement "chacun pour soi", plus la difficulté de déplacement augmente.</li>
+				<li>Inversément, plus les individus sont disposés à s'organiser dans l'espace et suivre les individus du même flux, plus la mobilité est aisée</li>
+				<li>Plus l'espace est chargé d'obstacles, plus le temps de parcours augmente par cause de détours fréquents.</li>
+				</ul>
+			</p>
+				
+			
+		<h2>
+		<a name="m%C3%A9thodes-et-proc%C3%A9dures" class="anchor" href="#m%C3%A9thodes-et-proc%C3%A9dures"><span class="octicon octicon-link"></span></a>
+		<span style="text-align: center;">Méthodes et procédures</span></h2>
+		
+		<h3>
+		<a name="d%C3%A9veloppement-du-programme" class="anchor" href="#d%C3%A9veloppement-du-programme"><span class="octicon octicon-link"></span></a>
+		Développement du programme</h3>
+		
+			<p>Avant de procéder à la description de l'évolution générale du modèles, quelques éléments de clarification du language du modèle basée-agents via NetLogo.<br/>
+			Un modèle est charactérisé par plusieurs éléments d'interaction avec l'utilisateur: une partie graphique que nous allons développer de suite, une série d'options et paramètres que nous pouvons faire varier (input),
+			une série de graphes ou de sorties de données qui permettent d'extraire de l'information (output). Un modèle fonctionne sur l'injection des paramètres intiaux, de l'opération des diverses fonctions, de la mémoire des paramètres transformées et affichage des résultats s'ils sont d'ordre graphique.
+			L'exécution des fonctions se fait par itérations successives, tel le temps qui avance. Ainsi, nous pouvons déterminer si une situation a un charactère chaotique dans le temps ou si elle tend à se stabiliser. Les éléments d'ordre graphique consistent dans le cas de NetLogo d'un système de coordonnées assimilé à un grille que nous appelons "espace", ainsi que des graphes qui explicitent les données.<br />
+			Un modèle basé-agents est caractérisé par sa représentation graphique à deux types d'éléments principaux: les <span style="font-style: italice;">patches</span>, que nous appelons cellules et les <span style="font-style: italice;">turtles</span>, que nous appelons agents ou individus dans notre modèle.<br>
+			Dans notre cas, les cellules ont différents états. Les cellules noires sont des éléments pleins hors de l'espace délimité, ce sont des obstacles. Les cellules jaunes ou vertes sont les portes d'entrée et de sortie des agents. Les cellules dont la couleur est un gradient du violet ou du bleu ciel sont les marques imaginaires laissées par le passage des agents.<br>
+			De même, il y a deux sortes d'agents: ceux rouges qui se déplacent de gauche à droite, de l'entrée verte à la sortie jaune; les agents bleus prennent le chemin en sens inverse.<br />
+			</p>
+			<br />
+			<p>Voici les principales étapes d'élaboration de notre modèle:</p>
+			<p>Mise en place d'un modèle simple composé d'un couloir avec 2 entrées (et respectivement sorties) ainsi que la possibilité de placer des obstacles aléatoires.</p>
+			<p><img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/Images/modele_1.jpg" alt="modele_schema 1" title="Image du modèle 1"></p>
+			<p>Ajout d'agents représentants des humains qui vont parcourir le couloir d'un côté à l'autre. Ces agents meurent lorsqu'ils arrivent à la sortie.</p>
+			<p>Implémentation d'un mécanisme de détection des obstacles et des autres agents arrivant en face afin de faire une esquive.</p>
+			<p><img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/Images/modele_2.jpg" alt="modele_schema 2" title="Image du modèle 2"></p>
+			<p>Ajout d'un système d'orientation en direction de la sortie.</p>
+			<p>Système de mémoire du sol par-rapport au nombre d'agents passant par une cellule donnée.</p>
+			<p><img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/Images/modele_3.jpg" alt="modele_schema 3" title="Image du modèle 3"></p>
+			<p>Méthode de calcul du temps de parcours pour traverser l'espace et mesure de la concentration des cellules colorées.</p>
+			<br />
+			<p>En l'état, de nombreux paramètres initiaux permettent le fonctionnement du modèle.<br/>
+			Certains concernent l'espace en question, ses dimensions, les obstacles qui l'occupent (dont une fonction pour dessiner ou enlever des obstacles).<br />
+			D'autres caractérisent les flux de personnes qui traversent l'espace: le nombre d'individus entrant, la capacité des agents à s'orienter vers la sortie et leur tolérance à des manoeuvres d'évitement des autres individus ou des obstacles.</p>
+			<p>En sortie, les données obtenues sont de diverses natures. Il s'agit du nombre instantané d'agents présents, des cellules colorées, du temps de parcours et de la répartition des cellules colorées sur l'ensemble de l'espace (quantifiée par une valeur de concentration).</p>
+			
+		<h2>
+		<a name="r%C3%A9sultats" class="anchor" href="#r%C3%A9sultats"><span class="octicon octicon-link"></span></a>
+		<span style="text-align: center;">Résultats</span></h2>
+		
+		<h2>
+		<a name="discussion-et-conclusion" class="anchor" href="#discussion-et-conclusion"><span class="octicon octicon-link"></span></a>
+		<span style="text-align: center;">Discussion et conclusion</span></h2>
+		
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/EPFL-AgentBased-2014">EPFL-AgentBased-2014</a></p>
