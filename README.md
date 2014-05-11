@@ -9,9 +9,12 @@ Nous voulons déterminer l'aspect des flux de déplacement selon des configurati
 Aussi, déterminer si les configurations adoptées sont satisfaisantes et si elles peuvent être améliorées.
 
 Nous avons émis plusieurs hypothèses comme suit:
-Plus un espace est occupé par des individus appartement à des flux de courant contraire, moins le déplacement et la traversées de l'espaces sont aisés
+
+Plus un espace est occupé par des individus appartement à des flux de courant contraire, moins le déplacement et la traversées de l'espaces sont aisés.
+
 Plus les individus adoptent un comportement "chacun pour soi", plus la difficulté de déplacement augmente.
-Inversément, plus les individus sont disposés à s'organiser dans l'espace et suivre les individus du même flux, plus la mobilité est aisée
+Inversément, plus les individus sont disposés à s'organiser dans l'espace et suivre les individus du même flux, plus la mobilité est aisée.
+
 Plus l'espace est chargé d'obstacles, plus le temps de parcours augmente par cause de détours fréquents.
 
 # **Méthodes et procédures**
