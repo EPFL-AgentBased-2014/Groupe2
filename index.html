@@ -134,7 +134,7 @@
 			<p>En sortie, les données obtenues sont de diverses natures. Il s'agit du nombre instantané d'agents présents, des cellules colorées, 
 			du temps de parcours et de la répartition des cellules colorées sur l'ensemble de l'espace (quantifiée par une valeur de concentration).</p><br />
 			<p>Le modèle actuel est constitué d'une routine de fonctionnement qui peut être synthétisée comme tel:</p>
-			<p><img src="https://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Schema_programme1.png" alt="schema_routine" title="Fonctionnement du modèle actuel"></p>
+			<p><img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Schema_programme1.png" alt="schema_routine" title="Fonctionnement du modèle actuel"></p>
 			<p>Notons que des systèmes d'extraction de données (ici représentés par les parallèlogrammes <span style="font-style: italic;">calculate</span>) permettent
 			le relevé instantané des valeurs telles que le nombre d'agents présents dans l'espace, le temps de parcours moyen pour traverser cet espace et la répartition 
 			des cellules colorées dans l'espace.<br />
@@ -142,6 +142,8 @@
 			concentration,
 			(une cellule aura 4 voisins de la même couleur qu'elle, 4 d'une autre), au contraire elle retourne 8 si les deux couleurs sont clairement distinctes et concentrée 
 			vers des pôles(une cellule aura 8 voisins de la même couleur qu'elle).</p>
+			<p>Ceci peut être illustré comme suivant:<br />
+			<img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Repartition1.png" alt="Illustration de la répartition" title="Système d'analyse de la répartition des agents"></p>
 		
 		<h3>
 		<a name="d%C3%A9veloppement-du-programme" class="anchor" href="#d%C3%A9veloppement-du-programme"><span class="octicon octicon-link"></span></a>
@@ -157,13 +159,45 @@
 			<li>Les premiers agents ayant le passage relativement libre, ils se dirigent tout droit vers la sortie. Ils marquent leur passage au sol en déposant une teinte légère 
 			de la couleur attribuée.</li>
 			<li>S'ils rencontrent un obstacle (mur de bord ou colonne au milieu de l'espace) ou encore un agent venant en sens inverse, ils font une manoeuvre d'esquive définie
-			par le paramètre en relation.</li>
-			
+			par le paramètre en relation.</li></ul></p>
+			<p>
+		<h3>Interface et légende des symboles utilisés</h3>
+		<p>Pour mieux comprendre les éléments dont nous avons parlé auparavant, une petite illustration s'impose:<br />
+		<img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Interface1.png" alt="Interface du modèle" title="Apperçu de l'interface du modèle"></p>
+		<p>Aussi, voici une légende des principaux symboles utilisés pour le modèle:<br />
+		<img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Legende1.png" alt="Légende des symboles" title="Symboles utilisés"></p>
 		
 		<h2>
 		<a name="r%C3%A9sultats" class="anchor" href="#r%C3%A9sultats"><span class="octicon octicon-link"></span></a>
 		<span style="text-align: center;">Résultats</span></h2>
 		
+		<p>Nous avons procédé à deux méthodes d'obtention de résultats :<br />
+		<ul><li>les résultats graphiques obtenus par les divers jeux de paramètres qui se présentent sous la forme de marques de couleurs au sol</li>
+		<li>les résultats statistiques obtenus par un nombre important (20 la plupart du temps) de simulations du programme via l'outil nommé "Behaviour space" pour lesquelles les paramètres variaient</li>
+		</ul>
+		</p>
+		<h3>Résultats graphiques</h3>
+		<p>Obtenus par des captures du modèle, nous pouvons déjà commenter les résultats et en déduire quelques points importants.<br />
+		Voici une synthèse des différents résultats graphiques que l'on peut obtenir:</p>
+		<p>
+		<img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Configurations_spaciales1.png" alt="Répartitions spaciales obtenues" title="Répartitions spaciales obtenues"></p>
+		<p>À noter que pour cette partie-ci, nous n'avons volontairement pas ajoutés d'obstacles dans l'espace.<p>
+		<p>Que peut-on en déduire ?<br />
+		On remarque d'abord qu'il y a deux familles de répartitions des flux:</p>
+		<p><ul><li>les répartitions chaotiques, où malgré un nombre d'itérations élevé les flux ne trouvent pas un équilibre et les agents poursuivent un déplacement aléatoire et non ordonné. 
+		Ceci est issu du paramètre de comportement des agents nommé "urge to turn right" qui régit les rencontres entre agents. Ici sa valeur est nulle, il n'y a donc pas de règle définie pour les croisements.</li>
+		<li>les répartitions ordonnées ou en voie de l'être à plus long terme, caractérisées par des bandes horizontales. En effet, le paramètre "urge to turn right" étant suppérieur à 5, les agents de même couleur prennent peu à peu des chemins identiques.
+		Le nombre de bandes parallèles dépend de la largeur de l'espace, du paramètre de déviation par la droite et du nombre d'agents présents dans l'espace.</li>
+		</ul></p>
+		</h3>Résultats statistiques</h3>
+		<p>Les données avec lesquelles nous avons fait varier le jeu de paramètres sont: la valeur de répartition et le temps de parcours. Les paramètres d'entrée sont la largeur du couloir et le comportement des agents (orientation vers la sortie et tendance à esquiver par la droite). Le nombre d'agents dans chaque flux respectif est définit comme constant.</p>
+		<p><img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Results1b.png" alt="Résultats synthétiques" title="Résultats synthétiques"></p>
+		<p>Les courbes ici représentées sont lissées afin d'illustrer les tendances et non l'ensemble des résultats obtenus par les nombreuses simulations. Ce sont donc des moyennes indicatives et non des résultats absolus (pour ces derniers, se référer aux tables Excel).</p>
+		<p>Que peut-on en déduire ?</p>
+		<ul><li>Le premier graphique illustre bien l'hypothèse selon laquelle des flux organisés, à savoir qui ont une tendance d'esquive semblable prise en considération, requièrent moins de temps pour traverser l'espace que des flux pour lesquelles les rencontres découlent d'esquives aléatoires.
+		Notons aussi que ce paramètre est important pour des espaces étroits et qu'il est négligeable pour un espace très large. Le second nous confirme la corélation forte entre la largeur de l'espace et la tendance à tourner à droite: l'influence de ce dernier paramètre est décisif pour des espaces étroits, beaucoup moins pour de larges espaces.</li>
+		<li>Les deux derniers graphiques traitent de la valeur de répartition des flux. Celle-ci confirme les tendances observées auparavent par les captures du modèle: dans un espace étroit où la tendance à esquiver par la droite est forte, il se formera deux bandes parallèles, une pour chaque flux. Dans un espace large, la répartition est divisée en plusieurs bandes, malgré une tendance à esquiver par la droite très forte.</li></ul></p>
+		<p>Il semblerait donc que la tendance à trourner à droite ait davantage d'influence sur l'efficacité du déplacement en permettant des flux en bandes que la largeur de l'espace qui laisse plus de placee mais qui permet à plusieurs bandes de même couleur de se former parallèlement.</p>				
 		<h2>
 		<a name="discussion-et-conclusion" class="anchor" href="#discussion-et-conclusion"><span class="octicon octicon-link"></span></a>
 		<span style="text-align: center;">Discussion et conclusion</span></h2>
