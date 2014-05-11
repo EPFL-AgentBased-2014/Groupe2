@@ -26,8 +26,8 @@ Voici les différentes étapes:
 -Changement de direction des turtles lorsqu'ils rencontrent un obstacle pour éviter celui-ci et puis de nouveau un changement de la direction vers la sortie.
 -Mémoire du sol par-rapport au nombres de personnes étant passé sur ce patch.
  
-# **Résultats**
+# **Résultats, Discussion et conclusion**
 
+Les résultats, discussion et conclusions détaillées se trouvent à l'adresse du rapport complet: http://epfl-agentbased-2014.github.io/Groupe2/
 
-
-# **Discussion et conclusion**
+Nous vous remercions pour l'intérêt que vous portez à notre étude !
