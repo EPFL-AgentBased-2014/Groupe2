@@ -83,7 +83,7 @@
 				</ul>
 			</p>
 			<p>Nos hypothèses en rapport à ce projet sont:
-				<ul><li>Plus un espace est occupé par des individus appartement à des flux de courant contraire, moins le déplacement et la traversées de l'espaces sont aisés</li>
+				<ul><li>Plus un espace est occupé par des individus appartement à des flux de courants contraires, moins le déplacement et la traversées de l'espaces sont aisés</li>
 				<li>Plus les individus adoptent un comportement "chacun pour soi", plus la difficulté de déplacement augmente.</li>
 				<li>Inversément, plus les individus sont disposés à s'organiser dans l'espace et suivre les individus du même flux, plus la mobilité est aisée</li>
 				<li>Plus l'espace est chargé d'obstacles, plus le temps de parcours augmente par cause de détours fréquents.</li>
@@ -197,12 +197,34 @@
 		<ul><li>Le premier graphique illustre bien l'hypothèse selon laquelle des flux organisés, à savoir qui ont une tendance d'esquive semblable prise en considération, requièrent moins de temps pour traverser l'espace que des flux pour lesquelles les rencontres découlent d'esquives aléatoires.
 		Notons aussi que ce paramètre est important pour des espaces étroits et qu'il est négligeable pour un espace très large. Le second nous confirme la corélation forte entre la largeur de l'espace et la tendance à tourner à droite: l'influence de ce dernier paramètre est décisif pour des espaces étroits, beaucoup moins pour de larges espaces.</li>
 		<li>Les deux derniers graphiques traitent de la valeur de répartition des flux. Celle-ci confirme les tendances observées auparavent par les captures du modèle: dans un espace étroit où la tendance à esquiver par la droite est forte, il se formera deux bandes parallèles, une pour chaque flux. Dans un espace large, la répartition est divisée en plusieurs bandes, malgré une tendance à esquiver par la droite très forte.</li></ul></p>
-		<p>Il semblerait donc que la tendance à trourner à droite ait davantage d'influence sur l'efficacité du déplacement en permettant des flux en bandes que la largeur de l'espace qui laisse plus de placee mais qui permet à plusieurs bandes de même couleur de se former parallèlement.</p>				
+		<p>Il semblerait donc que la tendance à tourner à droite ait davantage d'influence sur l'efficacité du déplacement en permettant des flux en bandes que la largeur de l'espace qui laisse plus de placee mais qui permet à plusieurs bandes de même couleur de se former parallèlement.</p>				
+		<p>Une autre représentation des résultats obtenus présentant ici l'action cumulée de la tendance à tourner à droite et de l'orientation vers la sortie où nous pouvons repérer le maximum et le minimum. </p>
+		<p><img src="http://raw.githubusercontent.com/EPFL-AgentBased-2014/Groupe2/master/images/Graph_rep1.png" alt="Graphe de la répartition" title="Graphe de la répartition"></p>
+		<p>Contrairement à ce à quoi nous nous attendions, la combinaison des deux paramètres à leur maximum n'aboutit par à une valeur de répartition des flux maximale. C'est donc une valeur pondérée qui permet une valeur de répartition la plus élevée.</p>
 		<h2>
 		<a name="discussion-et-conclusion" class="anchor" href="#discussion-et-conclusion"><span class="octicon octicon-link"></span></a>
 		<span style="text-align: center;">Discussion et conclusion</span></h2>
-		
-      </section>
+		<h3>Discussion des résultats</h3>
+		<p>Les résultats obtenus dans la partie précédente confirment en partie nos hypothèses initiales selon lesquelles les déplacement dans un espace par deux flux de sens opposés sont plus efficaces si des règles agissant sur le comportement des individus sont mis en place<br />
+		Mais c'est principalement l'action cumulée de ces règles, à savoir la tendance d'esquive par la droite des agents venant en sens inverse et l'orientation des agents vers la sortie, qui permet d'avoir une répartition des flux optimale et un temps de parcours réduit.<br />
+		À noter que l'ensemble des paramètres influence grandement les résultats dans une configuration spaciale étroite. Au contraire, plus l'espace est large, moins ces points sont décisifs et leur influence réduite.</p>		
+		<h3>Conclusion des résultats obtenus</h3>
+		<p>Premièrement, nous pouvons revenir sur nos hypothèses de départ:<br />
+		<ul><li>Plus un espace est saturé d'agents des deux flux, moins de déplacement est aisé. C'est ce que nous avons pu remarquer en faisant varier les paramètres du nombre d'agents par flux et de la largeur du couloir. Cela est d'autant plus vrai lorsque le nombre d'agent d'un flux est proche du nombre d'agents de l'autre flux. Si un flux est dominant, l'autre est subordonné; les confrontations sont moins nombreuses et le temps de parcours en est diminué.</li>
+		<li>Plus les agents adoptent un comportement organisé, ici charactérisé par la tendance d'esquive par la droite, plus les flux se séparent clairement et plus le déplacement est facilité. Nous avons vu aussi que l'orientation vers la sortie est un paramètre à pondérer. En effet, celui-ci dictant de s'orienter vers la sortie après chaque déplacement, il bride en partie la capacité des agents à former deux flux bien distincts. C'est donc un paramètre important mais où la valeur optimale n'est pas celle maximale mais définie par l'ensemble des autres paramètres.</li>
+		<li>Les obstacles influences grandement le temps de parcours des agents. Cela est particulièrement vrai dans notre modèle où le comportement des agents n'est pas idéal à l'apporche d'obstacles. Il serait en effet nécessaire d'améliorer ce point, les agents de notre modèle n'ayant actuellement pas un comportement réel ou proche de l'humain.</li></ul>
+		</p>
+		<p>Deuxièmement, nous pouvons s'interroger sur la pertinence des résultats obtenus. En effet, notre modèle est viable mais peu représentatif de la réalité. Le comportement homogène des agents, parfois biaisé par une approche mathématique et non humaine, le manque de relations et de communication entre eux confirme le status de modèle. Afin de s'approcher davantage des interractions réelles d'une telle situation, il faudrait prendre en compte un nombre conséquent d'autres paramètres. Ceux-ci seraient d'ordre spacial et physique, permettant de caractériser concrètement l'espace considéré, et d'ordre humain, caractérisant les interractions entre agents de manière individualisées et non générique.<br />
+		Ainsi, nos objectifs sont-il remplis ? <br />
+		Nous pouvons affirmer que nous avons déterminer l'aspect des flux de déplacement selon des configurations spaciales et de comportement des individus données, comme souhaité, dans les limites du modèle actuel.<br />
+		Nous avons aussi pu observer l'importance des règles régissant le comportement des agents dans des espaces étroit afin d'optimiser le déplacement, comme la toute relative importance de celles-ci dans un espace plus vaste.</p>
+		<h3>Prologements de l'étude</h3>
+		<p>Comme mentionné ci-dessus, le modèle en l'état fait fi de nombreux paramètres qui régissent les interractions entre individus dans une situation réelle. Il faudrait par conséquent améliorer les procédures de déplacement en tenant compte de l'ensemble de ces paramètres supplémentaires.<br />
+		Il serait alors intéressant de comparer les conclusions obtenues dans le cas du modèle actuel avec celles du modèle plus repésentatif de la réalité. Nous pourrions ainsi savoir si les paramètres choisis pour le modèle actuel sont les plus déterminants.</p>
+		<p>Un second prologement pertinent consiste à comparer notre modèle et les résulats obtenus avec des recherches parallèles qui portent sur des sujets semblables. Que ce soit d'autres modèles basés-agents ou des études de cas réels, la comparaison des résulats et de la pertinence de la modélisation entreprise seraient crutiales.</p>
+		<h3>Conclusion sur l'étude</h3>
+		<p>...</p>
+	  </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/EPFL-AgentBased-2014">EPFL-AgentBased-2014</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
